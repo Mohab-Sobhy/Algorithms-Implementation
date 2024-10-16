@@ -3,4 +3,6 @@ project(Algorithms_Implementation)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Algorithms_Implementation main.cpp)
+add_executable(Algorithms_Implementation main.cpp
+        DataStructures/header/Array.h
+        DataStructures/header/Heap.h)
