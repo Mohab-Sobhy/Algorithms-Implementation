@@ -14,10 +14,11 @@ int main()
     heap.Add(14);
     heap.Add(23);
 
-    cout<<heap.GetFirst();
-
-
-
+    cout<<heap.RetrieveFirst()<<endl;
+    cout<<heap.RetrieveFirst()<<endl;
+    cout<<heap.RetrieveFirst()<<endl;
+    cout<<heap.RetrieveFirst()<<endl;
+    cout<<heap.RetrieveFirst()<<endl;
 
     return 0;
 }

@@ -69,41 +69,31 @@ template<typename Elem>
 void Heap<Elem>::MoveDown(int ind) {
     int leftChildInd = Child(ind);
     int rightChildInd = leftChildInd+1;
-    int largestValueIndex = ind;
-    if(leftChildInd<a.getNumOfElements() && a[leftChildInd]>a[ind]) {
-        largestValueIndex = leftChildInd;
+    int targetIndex = ind;//largest value index in case of max heap || minimum value index in case of min heap
+    if(leftChildInd<a.getNumOfElements() && IsBefore(a[leftChildInd],a[ind])) {
+        targetIndex = leftChildInd;
     }
-    if(rightChildInd<a.getNumOfElements() && a[rightChildInd]>a[largestValueIndex]) {
-        largestValueIndex = rightChildInd;
+    if(rightChildInd<a.getNumOfElements() && IsBefore(a[rightChildInd],a[targetIndex])) {
+        targetIndex = rightChildInd;
     }
-    if(largestValueIndex != ind) {
-        swap(a[ind],a[largestValueIndex]);
-        MoveDown(largestValueIndex);
+    if(targetIndex != ind) {
+        swap(a[ind],a[targetIndex]);
+        MoveDown(targetIndex);
     }
 }
 
 template<typename Elem>
 Elem Heap<Elem>::GetFirst() {
-    return a[a.getNumOfElements()-1];
+    return a[0];
 }
 
 template<typename Elem>
 Elem Heap<Elem>::RetrieveFirst(){
-    try {
-        if(a.getNumOfElements()<=0) {
-            throw runtime_error("the heap is empty, can't retrieve");
-        }
-        Elem returnValue = GetFirst();
-        swap(a[0],a[a.getNumOfElements()-1]);
-        a.RemoveLast();
-        MoveDown(0);
-        return returnValue;
-    }
-    catch (const runtime_error& e) {
-        cerr<<e.what();
-        return nullptr;
-    }
-
+    Elem returnValue = GetFirst();
+    swap(a[0],a[a.getNumOfElements()-1]);
+    a.RemoveLast();
+    MoveDown(0);
+    return returnValue;
 }
 
 
@@ -111,4 +101,3 @@ inline bool IsBeforeInt(int& a, int& b)
 {
     return a<b;
 }
-
