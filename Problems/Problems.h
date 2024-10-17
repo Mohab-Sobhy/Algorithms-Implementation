@@ -5,6 +5,9 @@
 #ifndef PROBLEMS_H
 #define PROBLEMS_H
 
-int Add_All();// depend on Heap data structure to solve | Link -> https://vjudge.net/problem/uva-10954
+int Add_All();
+//
+// depend on Heap data structure to solve | Link -> https://vjudge.net/problem/uva-10954
+//
 
 #endif //PROBLEMS_H
