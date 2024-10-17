@@ -19,7 +19,7 @@ public:
 	void RemoveLast();
 	Value& operator[](int i);
 	void print(); //from me
-	int getNumOfElements();
+	int getNumOfElements(); //from me
 	//Array(); //from me
 };
 #include "../src/Array.tpp"

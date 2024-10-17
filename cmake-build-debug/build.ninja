@@ -55,6 +55,12 @@ build CMakeFiles/Algorithms_Implementation.dir/main.cpp.o: CXX_COMPILER__Algorit
   OBJECT_DIR = CMakeFiles/Algorithms_Implementation.dir
   OBJECT_FILE_DIR = CMakeFiles/Algorithms_Implementation.dir
 
+build CMakeFiles/Algorithms_Implementation.dir/Problems/Add_All.cpp.o: CXX_COMPILER__Algorithms_Implementation_unscanned_Debug /home/mohab/secondary/01_Repos/Algorithms-Implementation/Problems/Add_All.cpp || cmake_object_order_depends_target_Algorithms_Implementation
+  DEP_FILE = CMakeFiles/Algorithms_Implementation.dir/Problems/Add_All.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/Algorithms_Implementation.dir
+  OBJECT_FILE_DIR = CMakeFiles/Algorithms_Implementation.dir/Problems
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Algorithms_Implementation
@@ -63,7 +69,7 @@ build CMakeFiles/Algorithms_Implementation.dir/main.cpp.o: CXX_COMPILER__Algorit
 #############################################
 # Link the executable Algorithms_Implementation
 
-build Algorithms_Implementation: CXX_EXECUTABLE_LINKER__Algorithms_Implementation_Debug CMakeFiles/Algorithms_Implementation.dir/main.cpp.o
+build Algorithms_Implementation: CXX_EXECUTABLE_LINKER__Algorithms_Implementation_Debug CMakeFiles/Algorithms_Implementation.dir/main.cpp.o CMakeFiles/Algorithms_Implementation.dir/Problems/Add_All.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/Algorithms_Implementation.dir
   POST_BUILD = :
