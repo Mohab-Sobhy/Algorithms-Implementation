@@ -3,11 +3,20 @@
 //
 #pragma once
 
+#include <iostream>
 using namespace std;
 
 template <typename Value>
 void Array<Value>::Initialize() {
     n = 2;
+    sz = 0;
+    arr = new Value[n];
+    cout<<"Array was successfully initialized!\n";
+}
+
+template <typename Value>
+void Array<Value>::Initialize(int _n) {
+    n = _n;
     sz = 0;
     arr = new Value[n];
     cout<<"Array was successfully initialized!\n";

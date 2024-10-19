@@ -7,4 +7,9 @@ add_executable(Algorithms_Implementation main.cpp
         DataStructures/header/Array.h
         DataStructures/header/Heap.h
         Problems/Add_All.cpp
-        Problems/Problems.h)
+        Problems/Problems.h
+        DataStructures/header/Graph/Graph.h
+        DataStructures/header/Graph/Node.h
+        DataStructures/src/Graph/Node.cpp
+        DataStructures/src/Graph/Graph.cpp
+        DataStructures/header/Queue.h)

@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
 
-    Add_All();
+    //Add_All();
 
     return 0;
 }

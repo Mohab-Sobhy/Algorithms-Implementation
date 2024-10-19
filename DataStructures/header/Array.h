@@ -14,13 +14,14 @@ private:
 
 public:
 	void Initialize();
+	void Initialize(int _n);
 	void Destroy();
 	void AddLast(Value v);
 	void RemoveLast();
 	Value& operator[](int i);
-	void print(); //from me
-	int getNumOfElements(); //from me
-	//Array(); //from me
+	void print();
+	int getNumOfElements();
+	//Array();
 };
 #include "../src/Array.tpp"
 
