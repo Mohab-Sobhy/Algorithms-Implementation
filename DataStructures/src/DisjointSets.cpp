@@ -47,6 +47,16 @@ bool DisjointSets::Union(int i, int j) {
     }
 }
 
+int DisjointSets::FindLargestSetNodes() {
+    int smalest = parent[Find(1)];
+    for(int i=1;i<n;i++) {
+        if(smalest > parent[Find(i)]) {
+            smalest = parent[Find(i)];
+        }
+    }
+    return -1 * smalest;
+}
+
 void DisjointSets::Print() {
     for(int i=0;i<n;i++) {
         cout<<parent[i]<<' ';

@@ -15,6 +15,7 @@ struct DisjointSets
     void Destroy();
     int Find(int i);
     bool Union(int i, int j);
+    int FindLargestSetNodes();
     void Print();
 };
 

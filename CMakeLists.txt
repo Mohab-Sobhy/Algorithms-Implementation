@@ -14,4 +14,5 @@ add_executable(Algorithms_Implementation main.cpp
         DataStructures/src/Graph/Graph.cpp
         DataStructures/header/Queue.h
         DataStructures/header/DisjointSets.h
-        DataStructures/src/DisjointSets.cpp)
+        DataStructures/src/DisjointSets.cpp
+        Problems/Friends.cpp)
