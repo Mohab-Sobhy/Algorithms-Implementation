@@ -15,4 +15,9 @@ int Friends();
 // depend on disjoint sets data structure to solve | Link -> https://vjudge.net/problem/UVA-10608
 //
 
+int Spreading_The_News();
+//
+// depend on graph
+//
+
 #endif //PROBLEMS_H

@@ -1,12 +1,12 @@
-
-#include "DataStructures/header/DisjointSets.h"
 #include "Problems/Problems.h"
 #include <iostream>
 using namespace std;
 
 int main() {
 
-    Friends();
+
+    //Friends();
+    Spreading_The_News();
 
     return 0;
 }
