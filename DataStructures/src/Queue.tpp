@@ -1,4 +1,5 @@
 #include "../header/Array.h"
+using namespace std;
 
 template<class Type>
 void Queue<Type>::Initialize(int size) {
@@ -15,7 +16,7 @@ void Queue<Type>::Destroy() {
 template<class Type>
 void Queue<Type>::Add(Type t) {
     if (n == capacity) {
-        throw std::overflow_error("Queue is full");
+        throw overflow_error("Queue is full");
     }
     elems[n] = t;
     n++;
@@ -24,7 +25,7 @@ void Queue<Type>::Add(Type t) {
 template<class Type>
 Type Queue<Type>::Pop() {
     if (n == 0) {
-        throw std::underflow_error("Queue is empty");
+        throw underflow_error("Queue is empty");
     }
     Type temp = elems[f];
     for (int i = 0; i < n - 1; i++) {
@@ -37,7 +38,7 @@ Type Queue<Type>::Pop() {
 template<class Type>
 Type Queue<Type>::Peek() {
     if (n == 0) {
-        throw std::underflow_error("Queue is empty");
+        throw underflow_error("Queue is empty");
     }
     return elems[f];
 }
